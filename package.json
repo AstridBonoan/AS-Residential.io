@@ -6,7 +6,8 @@
   "homepage": "https://astridbonoan.github.io/AS-Residential.io/",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "vite build",
+    "typecheck": "tsc -b",
     "lint": "eslint .",
     "preview": "vite preview"
   },
