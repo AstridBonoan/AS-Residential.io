@@ -20,8 +20,7 @@ function MobileMenu({
   if (!open) return null
 
   return createPortal(
-
-<div
+    <div
       id="mobile-menu"
       className="fixed inset-0 z-[100] flex flex-col bg-cream md:hidden"
       role="dialog"
@@ -159,7 +158,11 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-semibold text-stone-700 transition-colors hover:text-terracotta-600"
+                  className={`text-sm font-semibold transition-colors ${
+                    onHero
+                      ? 'text-white/95 hover:text-white'
+                      : 'text-stone-700 hover:text-terracotta-600'
+                  }`}
                 >
                   {link.label}
                 </a>
@@ -170,7 +173,9 @@ export function Navbar() {
           <div className="hidden items-center gap-3 md:flex">
             <a
               href={PHONE_HREF}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-stone-800 hover:text-terracotta-600"
+              className={`inline-flex items-center gap-2 text-sm font-semibold transition-colors ${
+                onHero ? 'text-white/95 hover:text-white' : 'text-stone-800 hover:text-terracotta-600'
+              }`}
             >
               <IconPhone />
               {PHONE}
