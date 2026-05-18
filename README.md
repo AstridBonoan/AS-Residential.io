@@ -22,6 +22,8 @@ This repo uses GitHub Actions to build the site and publish static files to the 
 
 Every push to `main` runs `.github/workflows/deploy-pages.yml`, which builds with Vite and updates `gh-pages`.
 
+**Required:** In **Settings → Actions → General → Workflow permissions**, choose **Read and write permissions** so the workflow can push to the `gh-pages` branch.
+
 ## Quote form (optional Formspree)
 
 By default, submitting the quote form opens the visitor’s email client with a pre-filled message. To receive submissions in an inbox, create a [Formspree](https://formspree.io) form and add a GitHub Actions secret or local env file:
