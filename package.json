@@ -15,6 +15,10 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
+  "optionalDependencies": {
+    "@emnapi/core": "1.10.0",
+    "@emnapi/runtime": "1.10.0"
+  },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/node": "^24.12.3",
