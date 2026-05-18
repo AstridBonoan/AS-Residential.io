@@ -28,7 +28,7 @@ export function Services() {
             return (
               <li
                 key={service.title}
-                className="group rounded-2xl border border-stone-200 bg-cream p-8 shadow-soft transition hover:-translate-y-1 hover:shadow-card"
+                className="group rounded-2xl border border-stone-200 bg-cream p-8 shadow-soft transition md:hover:-translate-y-1 md:hover:shadow-card"
               >
                 <div className="inline-flex rounded-xl bg-sage-600/10 p-3 text-sage-700">
                   <Icon className="h-7 w-7" />
